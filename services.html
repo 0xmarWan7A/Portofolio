@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="colors/color-1.css"
+      class="alternate-color"
+      title="color-1"
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-2.css"
+      class="alternate-color"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-3.css"
+      class="alternate-color"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-4.css"
+      class="alternate-color"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-5.css"
+      class="alternate-color"
+      title="color-5"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style-switcher.css" />
+    <title>Marwan Hassaan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="#" class="brand"><span>M</span>arwan</a>
+        <ul class="nav">
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i><span>home</span></a>
+          </li>
+          <li>
+            <a href="about.html" id="about" onclick="setActivePage('about');"
+              ><i class="fa fa-user"></i><span>about</span></a
+            >
+          </li>
+          <li>
+            <a href="services.html" class="active"
+              ><i class="fa fa-list"></i><span>services</span></a
+            >
+          </li>
+          <li>
+            <a href="portofolio.html"
+              ><i class="fa fa-briefcase"></i><span>portofolio</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa fa-comment"></i><span>contact</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- start services page -->
+      <div class="services-content">
+        <h1>services</h1>
+        <div class="services-cards">
+          <div class="card">
+            <span><i class="fa-solid fa-code"></i></span>
+            <h4>web developer</h4>
+            <p>
+              A Web developer is a kind of programmer who specializes in the
+              development of applications relating to the World Wide Web or
+              distributed network applications.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa-brands fa-node"></i></span>
+            <h4>backend developer</h4>
+            <p>
+              A back-end developer is a type of programmer who creates the
+              logical back-end and core computational logic of a website,
+              software or information system.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa-solid fa-bug"></i></span>
+            <h4>cyber security researcher</h4>
+            <p>
+              Security researchers are skilled computer experts that use their
+              technical knowledge to identify cybersecurity vulnerabilities
+              within an organization or industry.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa-solid fa-database"></i></span>
+            <h4>databases</h4>
+            <p>
+              A database administrator (DBA) is the information technician
+              responsible for directing and performing all activities related to
+              maintaining a successful database environment.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa-brands fa-linux"></i></span>
+            <h4>operating systems</h4>
+            <p>
+              System administrators support, troubleshoot, and maintain computer
+              servers and networks, who make sure an organization's computer
+              systems are functioning and meet the needs of the organization.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa-solid fa-server"></i></span>
+            <h4>servers & hosts</h4>
+            <p>
+              A server administrator, or admin has the overall control of a
+              server. This is usually in the context of a business organization.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end protofolio page -->
+    </div>
+
+    <div class="style-switcher">
+      <div class="icons">
+        <div class="style-switcher-toggle s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+      <div class="color-themes">
+        <h4>themes</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveColor('color-1');"></span>
+          <span class="color-2" onclick="setActiveColor('color-2');"></span>
+          <span class="color-3" onclick="setActiveColor('color-3');"></span>
+          <span class="color-4" onclick="setActiveColor('color-4');"></span>
+          <span class="color-5" onclick="setActiveColor('color-5');"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/style-switcher.js"></script>
+  <script src="js/script.js"></script>
+</html>

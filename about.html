@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="colors/color-1.css"
+      class="alternate-color"
+      title="color-1"
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-2.css"
+      class="alternate-color"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-3.css"
+      class="alternate-color"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-4.css"
+      class="alternate-color"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-5.css"
+      class="alternate-color"
+      title="color-5"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style-switcher.css" />
+    <title>Marwan Hassaan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="#" class="brand"><span>M</span>arwan</a>
+        <ul class="nav">
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i><span>home</span></a>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="active"
+              id="about"
+              onclick="setActivePage('about');"
+              ><i class="fa fa-user"></i><span>about</span></a
+            >
+          </li>
+          <li>
+            <a href="services.html"
+              ><i class="fa fa-list"></i><span>services</span></a
+            >
+          </li>
+          <li>
+            <a href="portofolio.html"
+              ><i class="fa fa-briefcase"></i><span>portofolio</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa fa-comment"></i><span>contact</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- start about page -->
+      <div class="about-content">
+        <h1>about me</h1>
+        <div class="about-info">
+          <h3>i'm marwan hassaan and <span>backend developer</span></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
+            quisquam porro soluta, cumque omnis itaque quasi illum, nostrum
+            voluptate ducimus a maiores aut modi repellat iusto debitis alias
+            eius! Rerum!
+          </p>
+          <div class="about-data">
+            <div class="about-personal">
+              <div class="personal-info">
+                <p>birthday : <span> 30 jul 2001</span></p>
+              </div>
+              <div class="personal-info">
+                <p>age : <span> 22</span></p>
+              </div>
+              <div class="personal-info">
+                <p>website : <span> www.domain.com</span></p>
+              </div>
+              <div class="personal-info">
+                <p>email : <span> marwanhassaan2001@gmail.com</span></p>
+              </div>
+              <div class="personal-info">
+                <p>degree : <span> mechanical power engineer</span></p>
+              </div>
+              <div class="personal-info">
+                <p>phone : <span> +20 1099397153</span></p>
+              </div>
+              <div class="personal-info">
+                <p>country : <span> egypt</span></p>
+              </div>
+              <div class="personal-info">
+                <p>freelance : <span> available</span></p>
+              </div>
+              <div class="buttons">
+                <a href="#" class="btn">download cv</a>
+                <a href="contact.html" class="btn">hire me</a>
+              </div>
+            </div>
+            <div class="about-skills">
+              <div class="skill-item">
+                <h5>css</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 50%"></div>
+                  <div class="skill-percent">50%</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5>html</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 80%"></div>
+                  <div class="skill-percent">80%</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5>nodejs</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 45%"></div>
+                  <div class="skill-percent">45%</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5>js</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 85%"></div>
+                  <div class="skill-percent">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about page -->
+    </div>
+    <div class="style-switcher">
+      <div class="icons">
+        <div class="style-switcher-toggle s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+      <div class="color-themes">
+        <h4>themes</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveColor('color-1');"></span>
+          <span class="color-2" onclick="setActiveColor('color-2');"></span>
+          <span class="color-3" onclick="setActiveColor('color-3');"></span>
+          <span class="color-4" onclick="setActiveColor('color-4');"></span>
+          <span class="color-5" onclick="setActiveColor('color-5');"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/style-switcher.js"></script>
+  <script src="js/script.js"></script>
+</html>

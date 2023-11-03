@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="colors/color-1.css"
+      class="alternate-color"
+      title="color-1"
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-2.css"
+      class="alternate-color"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-3.css"
+      class="alternate-color"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-4.css"
+      class="alternate-color"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-5.css"
+      class="alternate-color"
+      title="color-5"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style-switcher.css" />
+    <title>Marwan Hassaan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="#" class="brand"><span>M</span>arwan</a>
+        <ul class="nav">
+          <li>
+            <a href="index.html" class="active"
+              ><i class="fa fa-home"></i><span>home</span></a
+            >
+          </li>
+          <li>
+            <a href="about.html" id="about" onclick="setActivePage('about');"
+              ><i class="fa fa-user"></i><span>about</span></a
+            >
+          </li>
+          <li>
+            <a href="services.html"
+              ><i class="fa fa-list"></i><span>services</span></a
+            >
+          </li>
+          <li>
+            <a href="portofolio.html"
+              ><i class="fa fa-briefcase"></i><span>portofolio</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa fa-comment"></i><span>contact</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- start Home page -->
+      <div class="content">
+        <div class="info">
+          <h1>welcome, my name is <span>marwan hassaan</span></h1>
+          <h2>i'am a <span class="job">backend developer</span></h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+            eveniet reprehenderit incidunt assumenda tempora accusamus! Corrupti
+            ipsa odit necessitatibus minus voluptates, ipsum animi quasi ipsam
+            asperiores impedit inventore sint nesciunt!
+          </p>
+          <a href="about.html" class="btn">more about me</a>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/0xmarWan7A/" target="_blank"
+              ><span><i class="fa-brands fa-facebook"></i></span
+            ></a>
+            <a href="https://twitter.com/0xmarWan7A" target="_blank"
+              ><span><i class="fa-brands fa-twitter"></i></span
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/marwan-hassaan/"
+              target="_blank"
+              ><span><i class="fa-brands fa-linkedin"></i></span
+            ></a>
+            <a href="https://github.com/0xmarWan7A" target="_blank"
+              ><span><i class="fa-brands fa-github"></i></span
+            ></a>
+          </div>
+        </div>
+        <div class="img">
+          <img
+            src="images/color-1.png"
+            class="MA"
+            id="MA"
+            alt="MA"
+            title="MA"
+          />
+        </div>
+      </div>
+      <!-- end Home page -->
+      <!-- start about page -->
+      <div class="about-content hidden">
+        <h1>about me</h1>
+        <div class="about-info">
+          <h3>i'm marwan hassaan and <span>backend developer</span></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
+            quisquam porro soluta, cumque omnis itaque quasi illum, nostrum
+            voluptate ducimus a maiores aut modi repellat iusto debitis alias
+            eius! Rerum!
+          </p>
+          <div class="about-data">
+            <div class="about-personal">
+              <div class="personal-info">
+                <p>birthday : <span> 30 jul 2001</span></p>
+              </div>
+              <div class="personal-info">
+                <p>age : <span> 22</span></p>
+              </div>
+              <div class="personal-info">
+                <p>website : <span> www.domain.com</span></p>
+              </div>
+              <div class="personal-info">
+                <p>email : <span> marwanhassaan2001@gmail.com</span></p>
+              </div>
+              <div class="personal-info">
+                <p>degree : <span> mechanical power engineer</span></p>
+              </div>
+              <div class="personal-info">
+                <p>phone : <span> +20 1099397153</span></p>
+              </div>
+              <div class="personal-info">
+                <p>country : <span> egypt</span></p>
+              </div>
+              <div class="personal-info">
+                <p>freelance : <span> available</span></p>
+              </div>
+              <div class="buttons">
+                <a href="#" class="btn">download cv</a>
+                <a href="#contact" class="btn">hire me</a>
+              </div>
+            </div>
+            <div class="about-skills">
+              <div class="skill-item">
+                <h5>css</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 50%"></div>
+                  <div class="skill-percent">50%</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5>html</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 80%"></div>
+                  <div class="skill-percent">80%</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5>php</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 45%"></div>
+                  <div class="skill-percent">45%</div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h5>js</h5>
+                <div class="progress">
+                  <div class="in-progress" style="width: 85%"></div>
+                  <div class="skill-percent">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about page -->
+      <!-- start protofolio page -->
+      <div class="protofolio-content hidden">
+        <h1>protofolio</h1>
+        <div class="protofolio-cards">
+          <a href="#" class="card card-1">
+            <div class="card-img">
+              <img src="MA.png" />
+            </div>
+            <h4>protofolio</h4>
+          </a>
+          <a
+            href="https://0xmarwan7a.github.io/starbucks/"
+            target="_blank"
+            class="card card-2"
+            onmouseover='document.getElementById("img-2").src = "star-w.png"'
+            onmouseleave='document.getElementById("img-2").src = "star.png"'
+          >
+            <div class="card-img">
+              <img src="star.png" id="img-2" />
+            </div>
+            <h4>landing page 1</h4>
+          </a>
+          <a
+            href="https://0xmarwan7a.github.io/pepsi/"
+            target="_blank"
+            class="card card-3"
+            onmouseover='document.getElementById("img-3").src = "pepsi-w.png"'
+            onmouseleave='document.getElementById("img-3").src = "pepsi.png"'
+          >
+            <div class="card-img">
+              <img src="pepsi.png" id="img-3" />
+            </div>
+            <h4>landing page 2</h4>
+          </a>
+          <a
+            href="https://0xmarwan7a.github.io/iPhone/"
+            target="_blank"
+            class="card card-4"
+            onmouseover='document.getElementById("img-4").src = "apple-w.png"'
+            onmouseleave='document.getElementById("img-4").src = "iphone.png"'
+          >
+            <div class="card-img">
+              <img src="iphone.png" id="img-4" />
+            </div>
+            <h4>landing page 3</h4>
+          </a>
+          <a
+            href="https://0xmarwan7a.github.io/engForTalents/"
+            target="_blank"
+            class="card card-5"
+          >
+            <div class="card-img">
+              <img src="stage.png" />
+            </div>
+            <h4>landing page 4</h4>
+          </a>
+          <a
+            href="https://0xmarwan7a.github.io/cimaDead/"
+            target="_blank"
+            class="card card-6"
+          >
+            <div class="card-img">
+              <img src="case.png" />
+            </div>
+            <h4>landing page 5</h4>
+          </a>
+        </div>
+      </div>
+      <!-- end services page -->
+      <!-- start services page -->
+      <div class="services-content hidden">
+        <h1>services</h1>
+        <div class="services-cards">
+          <div class="card">
+            <span><i class="fa fa-home"></i></span>
+            <h4>web developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores iste dignissimos a possimus debitis, repudiandae est,
+              culpa illum harum earum sit minus fugit itaque ad nulla ut velit
+              voluptatum vitae.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa fa-home"></i></span>
+            <h4>web developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores iste dignissimos a possimus debitis, repudiandae est,
+              culpa illum harum earum sit minus fugit itaque ad nulla ut velit
+              voluptatum vitae.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa fa-home"></i></span>
+            <h4>web developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores iste dignissimos a possimus debitis, repudiandae est,
+              culpa illum harum earum sit minus fugit itaque ad nulla ut velit
+              voluptatum vitae.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa fa-home"></i></span>
+            <h4>web developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores iste dignissimos a possimus debitis, repudiandae est,
+              culpa illum harum earum sit minus fugit itaque ad nulla ut velit
+              voluptatum vitae.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa fa-home"></i></span>
+            <h4>web developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores iste dignissimos a possimus debitis, repudiandae est,
+              culpa illum harum earum sit minus fugit itaque ad nulla ut velit
+              voluptatum vitae.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fa fa-home"></i></span>
+            <h4>web developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores iste dignissimos a possimus debitis, repudiandae est,
+              culpa illum harum earum sit minus fugit itaque ad nulla ut velit
+              voluptatum vitae.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end protofolio page -->
+      <!-- start contact us page -->
+      <div class="contact-content hidden">
+        <h1>conatc me</h1>
+        <div class="question">
+          <h3>have you any question ?</h3>
+          <p>i'm in your service</p>
+          <div class="icons">
+            <div class="item">
+              <span><i class="fa fa-home"></i></span>
+              <h2>call me on</h2>
+              <p>+20 1099397153</p>
+            </div>
+            <div class="item">
+              <span><i class="fa fa-home"></i></span>
+              <h2>office</h2>
+              <p>Egypt, Suez</p>
+            </div>
+            <div class="item">
+              <span><i class="fa fa-home"></i></span>
+              <h2>email</h2>
+              <p>m5500volly@gmail.com</p>
+            </div>
+            <div class="item">
+              <span><i class="fa fa-home"></i></span>
+              <h2>website</h2>
+              <p>www.domain.com</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="message-title">
+              <h3>send me an email</h3>
+              <p>i'm very responsive to messages</p>
+            </div>
+            <form action="#">
+              <div class="form-info">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type=" text" placeholder="Subject" />
+              </div>
+              <div class="send-me">
+                <textarea cols="30" rows="10" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" value="Send Me" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end contact us page -->
+    </div>
+
+    <div class="style-switcher">
+      <div class="icons">
+        <div class="style-switcher-toggle s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+      <div class="color-themes">
+        <h4>themes</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveColor('color-1');"></span>
+          <span class="color-2" onclick="setActiveColor('color-2');"></span>
+          <span class="color-3" onclick="setActiveColor('color-3');"></span>
+          <span class="color-4" onclick="setActiveColor('color-4');"></span>
+          <span class="color-5" onclick="setActiveColor('color-5');"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/style-switcher.js"></script>
+  <script src="js/script.js"></script>
+</html>

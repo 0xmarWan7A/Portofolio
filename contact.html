@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="styles/sweetalert2.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="colors/color-1.css"
+      class="alternate-color"
+      title="color-1"
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-2.css"
+      class="alternate-color"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-3.css"
+      class="alternate-color"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-4.css"
+      class="alternate-color"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="colors/color-5.css"
+      class="alternate-color"
+      title="color-5"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style-switcher.css" />
+    <title>Marwan Hassaan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="#" class="brand"><span>M</span>arwan</a>
+        <ul class="nav">
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i><span>home</span></a>
+          </li>
+          <li>
+            <a href="about.html" id="about" onclick="setActivePage('about');"
+              ><i class="fa fa-user"></i><span>about</span></a
+            >
+          </li>
+          <li>
+            <a href="services.html"
+              ><i class="fa fa-list"></i><span>services</span></a
+            >
+          </li>
+          <li>
+            <a href="portofolio.html"
+              ><i class="fa fa-briefcase"></i><span>portofolio</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="active"
+              ><i class="fa fa-comment"></i><span>contact</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- start contact us page -->
+      <div class="contact-content">
+        <h1>conatc me</h1>
+        <div class="question">
+          <h3>have you any question ?</h3>
+          <p>i'm in your service</p>
+          <div class="icons">
+            <div class="item">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <h2>call me on</h2>
+              <p>+20 1099397153</p>
+            </div>
+            <div class="item">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <h2>office</h2>
+              <p>Egypt, Suez</p>
+            </div>
+            <div class="item">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <h2>email</h2>
+              <p>m5500volly@gmail.com</p>
+            </div>
+            <div class="item">
+              <span><i class="fa-solid fa-globe"></i></span>
+              <h2>website</h2>
+              <p>www.domain.com</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="message-title">
+              <h3>send me an email</h3>
+              <p>i'm very responsive to messages</p>
+            </div>
+            <form
+              action="https://sheetdb.io/api/v1/ij6jd3r4dp3hp"
+              id="sheetdb-form"
+            >
+              <div class="form-info">
+                <input type="text" id="name" name="Name" placeholder="Name" />
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Email"
+                />
+                <input
+                  type=" text"
+                  id="subject"
+                  name="Subject"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="send-me">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  name="Message"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <input type="submit" value="Send Me" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end contact us page -->
+    </div>
+
+    <div class="style-switcher">
+      <div class="icons">
+        <div class="style-switcher-toggle s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+      <div class="color-themes">
+        <h4>themes</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveColor('color-1');"></span>
+          <span class="color-2" onclick="setActiveColor('color-2');"></span>
+          <span class="color-3" onclick="setActiveColor('color-3');"></span>
+          <span class="color-4" onclick="setActiveColor('color-4');"></span>
+          <span class="color-5" onclick="setActiveColor('color-5');"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/style-switcher.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    var form = document.getElementById("sheetdb-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+      })
+        .then((response) => response.json())
+        .then((html) => {
+          swal
+            .fire({
+              title: "Your Submition Sent Successfully",
+              icon: "success",
+              confirmButtonColor: "green",
+            })
+            .then(function () {
+              location.reload();
+            });
+        });
+    });
+  </script>
+</html>
