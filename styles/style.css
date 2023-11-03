@@ -811,7 +811,6 @@ h2 {
 
   .protofolio-content .protofolio-cards .card {
     width: 70%;
-    margin-left: 150px;
   }
 
   .protofolio-content .protofolio-cards .card h4 {
@@ -988,6 +987,7 @@ h2 {
 
   .protofolio-content .protofolio-cards .card {
     width: 70%;
+    margin-left: 50px;
   }
 
   .protofolio-content .protofolio-cards .card h4 {
