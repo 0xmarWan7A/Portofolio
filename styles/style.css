@@ -523,23 +523,23 @@ h2 {
 }
 
 .protofolio-content .protofolio-cards .card-2:hover {
-  background-color: green;
+  background-color: red;
 }
 
 .protofolio-content .protofolio-cards .card-3:hover {
-  background-color: #007bff;
+  background-color: green;
 }
 
 .protofolio-content .protofolio-cards .card-4:hover {
-  background-color: black;
+  background-color: red;
 }
 
 .protofolio-content .protofolio-cards .card-5:hover {
-  background-color: #fa5b0f;
+  background-color: #007bff;
 }
 
 .protofolio-content .protofolio-cards .card-6:hover {
-  background-color: red;
+  background-color: #fa5b0f;
 }
 
 .protofolio-content .protofolio-cards .card .card-img img {
