@@ -1,5 +1,5 @@
 var type = new Typed(".job", {
-  strings: ["", "backend developer", "cyber security researcher"],
+  strings: ["", "Mechanical Power Engineer", "MEP Engineer"],
   typeSpeed: 100,
   BackSpeed: 60,
   loop: true,
